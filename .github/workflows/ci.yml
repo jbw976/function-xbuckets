@@ -30,7 +30,7 @@ env:
   # xpkg.crossplane.io is just an alias for ghcr.io, so we upload to ghcr.io but
   # this'll be pulled from xpkg.crossplane.io.
   XPKG: ghcr.io/${{ github.repository}}
-  XPKG_UP: xpkg.upbound.io/${{ github.repository}}
+  XPKG_UP: xpkg.upbound.io/jaredorg/${{ github.event.repository.name }}
 
   # The package version to push. The default is 0.0.0-gitsha.
   XPKG_VERSION: ${{ inputs.version }}
