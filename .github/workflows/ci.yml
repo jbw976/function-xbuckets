@@ -121,7 +121,7 @@ jobs:
         run: |
           git clone https://github.com/jbw976/crossplane.git
           cd crossplane
-          git checkout xpkg
+          git checkout batch
           go build -o crossplane ./cmd/crank
           chmod +x crossplane
           sudo mv crossplane /usr/local/bin/
@@ -166,7 +166,7 @@ jobs:
         run: |
           git clone https://github.com/jbw976/crossplane.git
           cd crossplane
-          git checkout xpkg
+          git checkout batch
           go build -o crossplane ./cmd/crank
           chmod +x crossplane
           sudo mv crossplane /usr/local/bin/
